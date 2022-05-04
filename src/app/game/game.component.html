@@ -12,5 +12,13 @@
       style="right: 25px"
       src="/assets/card_cover.png"
     />
+    <img
+      *ngIf="pickCardAnimation"
+      [class.pick-card]="pickCardAnimation"
+      (click)="takeCard()"
+      class="pick-card"
+      style="right: 25px"
+      src="/assets/ace_1.png"
+    />
   </div>
 </div>
