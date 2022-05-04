@@ -6,7 +6,6 @@
       src="/assets/card_cover.png"
     />
     <img
-      [class.pick-card]="pickCardAnimation"
       (click)="takeCard()"
       class="top-card"
       style="right: 25px"
@@ -18,7 +17,7 @@
       (click)="takeCard()"
       class="pick-card"
       style="right: 25px"
-      src="/assets/ace_1.png"
+      src="/assets/{{ currentCard }}.png"
     />
   </div>
 </div>

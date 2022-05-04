@@ -8,6 +8,7 @@ import { Game } from 'src/game';
 })
 export class GameComponent implements OnInit {
   pickCardAnimation = false;
+  currentCard: string = '';
   game!: Game;
   constructor() {}
 
@@ -21,6 +22,8 @@ export class GameComponent implements OnInit {
   }
 
   takeCard() {
+    this.currentCard = this.game.stack.pop()!;
+    console.log(this.currentCard);
     this.pickCardAnimation = true;
   }
 }
