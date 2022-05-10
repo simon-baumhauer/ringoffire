@@ -1,13 +1,4 @@
 {
-  "targets": {
-    "ring-of-fire-d01c3": {
-      "hosting": {
-        "ringoffrire": [
-          "ring-of-fire-d01c3"
-        ]
-      }
-    }
-  },
   "projects": {
     "default": "ring-of-fire-d01c3"
   }
