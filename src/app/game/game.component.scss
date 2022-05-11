@@ -82,10 +82,38 @@
   right: 0;
   top: 0;
   display: flex;
-  overflow-x: scroll;
+
   overflow-y: hidden;
 
   app-player-mobile {
     margin-left: 8px;
   }
+}
+
+app-player,
+app-player-mobile {
+  cursor: pointer;
+
+  &:hover {
+    filter: brightness(1.15);
+  }
+}
+
+.game-over {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  img {
+    width: 300px;
+    height: 300px;
+    object-position: center;
+  }
+}
+
+.preloadImage {
+  opacity: 0;
+  z-index: -999;
+  width: 0px;
+  height: 0px;
 }
